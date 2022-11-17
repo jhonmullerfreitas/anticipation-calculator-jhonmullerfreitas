@@ -5,11 +5,8 @@ import InputAdornment from '@mui/material/InputAdornment';
 import * as yup from "yup"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
-import { useState } from "react";
 
-const FormComponent = () =>{
-
-    const [data, setData] = useState([])
+const FormComponent = ({setData}) =>{
 
     const schema = yup.object().shape({
         saleValue: yup.number().required("Valor obrigatório"),
@@ -22,7 +19,7 @@ const FormComponent = () =>{
     });
 
     const onSubmitFunction = (data) => setData(data)
-    // console.log(data)
+
     return(
         <form className="form-simulation" onSubmit={handleSubmit(onSubmitFunction)} >
             <h3>Simule sua Antecipação</h3>
