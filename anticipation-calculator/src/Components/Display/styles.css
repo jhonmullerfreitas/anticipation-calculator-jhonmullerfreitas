@@ -1,0 +1,21 @@
+.container-display{
+    height: 70vh;
+    width: 75vw;
+
+    border-radius: 0 0 10px 10px;
+
+    background-color: rgb(155, 156, 173);
+}
+
+@media(min-width: 768px){
+    .container-display{
+        width: 60vw;
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+@media(min-width: 1024px){
+    .container-display{
+        width: 30vw;
+    }
+}

@@ -1,0 +1,52 @@
+.form-simulation{
+    height: 70vh;
+    width: 75vw;
+    
+    border-radius: 10px 10px 0 0;
+    
+    background-color: rgb(236, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text-field{
+    width: 200px;
+}
+
+.erro-message{
+    font-size: 10px;
+    color: #d32f2f;
+}
+
+@media(min-width: 768px){
+
+    .form-simulation{
+        width: 60vw;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .text-field{
+        width: 300px;
+    }
+
+    .erro-message{
+        font-size: 12px;
+    }
+}
+
+@media(min-width: 1024px){
+
+    .form-simulation{
+        width: 30vw;
+    }
+
+    .text-field{
+        width: 300px;
+    }
+
+    .erro-message{
+        font-size: 14px;
+    }
+}

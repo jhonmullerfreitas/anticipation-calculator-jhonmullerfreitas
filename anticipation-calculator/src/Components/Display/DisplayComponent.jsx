@@ -5,8 +5,9 @@ const DisplayComponent = () =>{
 
 
     return(
-        <>
-        </>
+        <div className="container-display" >
+            <p>Teste</p>
+        </div>
     )
 }
 

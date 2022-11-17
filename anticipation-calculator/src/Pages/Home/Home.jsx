@@ -4,10 +4,10 @@ import "./styles.css"
 
 const Home = () => {
     return(
-        <>
+        <div className="container-home">
             <FormComponent/>
             <DisplayComponent/>
-        </>
+        </div>
     )
 }
 
