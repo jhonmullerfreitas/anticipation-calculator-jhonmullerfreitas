@@ -1,14 +1,17 @@
 import "./styles.css"
 
-const DisplayComponent = () =>{
+const DisplayComponent = ({data}) =>{
 
     return(
         <div className="container-display" >
             <h3>Você receberá:</h3>
-            <p>Amanhã: </p>
-            <p>Em 15 dias: </p>
-            <p>Em 30 dias: </p>
-            <p>Em 90 dias: </p>
+                <div>
+                    {
+                        Object.keys(data).map((prazo, index) =>
+                            <p key={index}>Em {prazo} dia(s): R$ {data[prazo]},00</p>
+                        )
+                    }
+                </div>
         </div>
     )
 }
